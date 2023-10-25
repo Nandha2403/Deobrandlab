@@ -9,3 +9,24 @@
   background-color: #13005a;
   border: 1px solid black;
 }
+
+.brand_identity h1{
+  font-size: 70px;
+  color: #ffffff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+.trustedby_cont{
+  border: 1px solid green;
+  background-color: #13005a;
+
+}
+.trustedby_cont h1{
+  margin-left: 1rem;
+  text-align: left;
+  color: palevioletred;
+  border: 1px solid green;
+}
