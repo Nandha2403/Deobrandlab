@@ -1,7 +1,6 @@
 import React from "react";
-import "./App.css";
-import Homepage from "./Pages/HomePage/Homepage";
 import Allroutes from "./Routes/Allroutes";
+import "./App.css";
 
 function App() {
   return (

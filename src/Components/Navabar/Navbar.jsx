@@ -20,15 +20,15 @@ const Navbar = () => {
   return (
     <nav className="menu">
       <div className="menu__logo">
-        <Link to={"/"} target="_top">
+        <Link to={"/"}>
           <img src={DeoLogo} alt="Deobrandlab" />
         </Link>
       </div>
       <div className="menu__container">
         <div className="menu_links_big_screen">
-          <Menu mode="horizontal">
+          <Menu mode="horizontal" style={{ fontSize: "20px" }}>
             <Menu.Item key="home">
-              <a href="#">Home</a>
+              <Link to={"/"}>Home</Link>
             </Menu.Item>
             <Menu.Item key="Clients">
               <a href="#">Clients</a>
@@ -37,10 +37,10 @@ const Navbar = () => {
               <a href="#">Portfolio</a>
             </Menu.Item>
             <Menu.Item key="Services">
-              <a href="#">Services</a>
+              <Link to={"/services"}>Services</Link>
             </Menu.Item>
             <Menu.Item key="AboutUs">
-              <a href="#">About Us</a>
+              <Link to={"/about-us"}>About Us</Link>
             </Menu.Item>
           </Menu>
         </div>
@@ -52,15 +52,10 @@ const Navbar = () => {
         >
           <span className="Menu_btn_bars"></span>
         </Button>
-        <Drawer
-          title="Basic Drawer"
-          placement="right"
-          onClose={handleDrawerOnClose}
-          open={open}
-        >
+        <Drawer placement="right" onClose={handleDrawerOnClose} open={open}>
           <Menu mode="vertical">
             <Menu.Item key="home">
-              <a href="#">Home</a>
+              <Link to={"/"}>Home</Link>
             </Menu.Item>
             <Menu.Item key="Clients">
               <a href="#">Clients</a>
@@ -69,10 +64,10 @@ const Navbar = () => {
               <a href="#">Portfolio</a>
             </Menu.Item>
             <Menu.Item key="Services">
-              <a href="#">Services</a>
+              <Link to={"/services"}>Services</Link>
             </Menu.Item>
             <Menu.Item key="AboutUs">
-              <a href="#">About Us</a>
+              <Link to={"/about-us"}>About Us</Link>
             </Menu.Item>
           </Menu>
         </Drawer>

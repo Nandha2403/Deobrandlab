@@ -1,0 +1,88 @@
+.footer_container {
+  margin-top: 5rem;
+  /* border: 2px solid greenyellow; */
+  /* border-top: 15px solid pink; */
+  padding: 2rem 0 5rem 0;
+}
+/* chatgpt */
+.gradient_border {
+  /* border: 1px solid transparent; */
+  border-top: 30px solid;
+  border-image: linear-gradient(
+    to right,
+    #9863bd,
+    #ff6347,
+    rgb(246, 215, 91)
+  ); /* Specify your gradient colors here */
+  border-image-slice: 1;
+  backdrop-filter: blur(10px);
+}
+
+.footerLinksAndLogoImg {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  /* border: 1px solid wheat; */
+  align-items: center;
+  justify-content: space-between;
+}
+.footerLinks {
+  /* margin-left: 4rem; */
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid greenyellow; */
+  margin: auto;
+  font-size: 20px;
+}
+.footerLinks a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+.footerLogo {
+  width: 200px;
+  /* border: 1px solid yellow; */
+}
+.footerLogo img {
+  width: 100%;
+}
+
+.SocialLogoCont {
+  display: flex;
+  justify-content: end;
+  width: 95%;
+  margin: auto;
+  margin-top: 1rem;
+  /* border: 1px solid white; */
+}
+.SocialLogoCont div {
+  width: 30px;
+  /* border: 1px solid wheat; */
+  margin-right: 0.5rem;
+}
+
+.SocialLogoCont div > a img {
+  width: 100%;
+}
+.SocialLogoCont div > img:hover {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 767px) {
+  .footerLinksAndLogoImg {
+    width: 100%;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .footerLinks {
+    width: 90%;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 2rem;
+    font-size: medium;
+  }
+  .SocialLogoCont {
+    justify-content: center;
+  }
+}

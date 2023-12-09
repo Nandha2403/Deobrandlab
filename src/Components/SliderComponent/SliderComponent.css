@@ -1,0 +1,24 @@
+.main_container {
+  margin: 10px;
+}
+.main_container .container {
+  /* border: 1px solid yellow; */
+  padding: 40px 0;
+}
+
+.main_container .container img {
+  height: 90px;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+  /* border: 1px solid green; */
+}
+.main_container .container p{
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 1rem;
+}

@@ -1,32 +1,382 @@
+.parent {
+  background-color: #020127;
+}
+
+.headings {
+  /* font-size: 32px;
+  color: palevioletred;
+  font-weight: bold; */
+
+  margin-left: 1rem;
+  color: #ffffff;
+  /* font-family: "Avenir", serif; */
+  /* font-family: "Raleway", sans-serif; */
+  /* font-family: "Bebas Neue", sans-serif; */
+  /* font-family: "Futura", "Trebuchet MS", Arial, sans-serif; */
+  font-family: Verdana, sans-serif;
+  font-style: oblique;
+  font-size: 2em;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.4em;
+  /* letter-spacing: 2px; */
+}
 .video_container {
-  height: 60vh;
-  background-color: #13005a;
-  border: 1px solid black;
+  width: 100%;
+  /* height: 60vh; */
+  /* border: 1px solid green; */
 }
 
 .brand_identity {
-  height: 60vh;
-  background-color: #13005a;
-  border: 1px solid black;
+  /* height: 60vh; */
+  margin-top: 5rem;
+  /* border: 1px solid green; */
 }
 
-.brand_identity h1{
-  font-size: 70px;
+.brand_identity h1 {
+  /* color: white; */
+  text-align: center;
+  font-size: 36px;
+  background-image: linear-gradient(
+    to right,
+    #e157af,
+    #dfa92c,
+    #a54b8b,
+    orange
+  );
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-size: 200% 100%;
+  animation: wave 5s infinite;
+}
+/* .brand_identity h1:hover {
+  background-image: linear-gradient(to right, #ee00ff, orange, #66ebff);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+} */
+
+.trustedby_cont {
+  margin-top: 10rem;
+  /* border: 1px solid green; */
+}
+
+.what_wedo_for_you_cont {
+  margin-top: 10rem;
+  /* border: 1px solid greenyellow; */
+}
+.what_wedo_for_you_cont h1 {
+  font-size: 26px;
+  line-height: 4rem;
   color: #ffffff;
   text-align: center;
-  -webkit-animation: glow 1s ease-in-out infinite alternate;
-  -moz-animation: glow 1s ease-in-out infinite alternate;
-  animation: glow 1s ease-in-out infinite alternate;
+  margin: 5rem 0 5rem 0;
+  font-style: italic;
 }
 
-.trustedby_cont{
-  border: 1px solid green;
-  background-color: #13005a;
-
+.design_animate {
+  margin-top: 10rem;
+  /* border: 1px solid green; */
+  padding-bottom: 5rem;
 }
-.trustedby_cont h1{
-  margin-left: 1rem;
-  text-align: left;
-  color: palevioletred;
-  border: 1px solid green;
+.design_animate_Location_circle {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 5px solid rgba(180, 58, 164, 1);
+  /* border-image: linear-gradient(
+    90deg,
+    rgba(180, 58, 164, 1) 0%,
+    rgba(180, 58, 164, 0.8869922969187675) 0%,
+    rgba(252, 184, 69, 0.9318102240896359) 99%
+  ); */
+  margin: auto;
+  margin-top: 5rem;
+  display: flex;
+}
+.design_animate_Location_circle > div {
+  margin: auto;
+}
+.under_circle_txt {
+  color: white;
+  margin-top: 3rem;
+  text-align: center;
+}
+.under_circle_txt > p {
+  font-size: 26px;
+  font-style: italic;
+  font-weight: bold;
+}
+.services {
+  margin-top: 10rem;
+  /* border: 1px solid green; */
+}
+.services_img_container {
+  width: 95%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-between;
+  /* border: 1px solid yellow; */
+  gap: 10px;
+  margin: auto;
+  margin-top: 5rem;
+}
+.services_img_container > img {
+  width: 90%;
+  /* border: 1px solid grey; */
+  margin: auto;
+}
+/* .services_img_container > img:hover {
+  cursor: pointer;
+  border-radius: 50%;
+  border: 5px solid rgba(180, 58, 164, 1)
+} */
+.Aboutus {
+  margin-top: 10rem;
+  /* border: 1px solid goldenrod; */
+}
+
+.Aboutus h1 {
+  font-size: 26px;
+  color: #ffffff;
+  line-height: 3rem;
+  text-align: center;
+  margin: 5rem 0 3rem 0;
+  font-style: italic;
+  /* border: 1px solid green; */
+}
+
+.Spandeobrandlab {
+  font-size: 50px;
+  /* -webkit-box-reflect: below 1px linear-gradient(transparent, #fff); */
+  outline: none;
+  animation: animate 5s linear infinite;
+  background-color: transparent;
+}
+
+.btnContainer {
+  width: fit-content;
+  /* border: 1px solid greenyellow; */
+  margin: auto;
+}
+/* .btnContainer > button {
+  padding: 10px 40px 10px 40px;
+  font-size: 22px;
+  background-image: linear-gradient(
+    to right,
+    violet,
+    pink,
+    rgba(255, 166, 0, 0.73)
+  );
+  border: 0;
+  cursor: pointer;
+  color: white;
+} */
+.Portfolio {
+  margin-top: 15rem;
+  display: flex;
+  /* border: 1px solid green; */
+}
+
+.Portfolio > div {
+  width: 50%;
+  /* border: 1px solid snow; */
+}
+
+.Portfolio_right {
+  padding-right: 2rem;
+  text-align: right;
+}
+.Portfolio_right h1 {
+  font-size: 26px;
+  font-style: italic;
+  line-height: 2rem;
+  color: #ffffff;
+}
+
+.We {
+  display: flex;
+  margin-top: 15rem;
+  /* border: 1px solid yellow; */
+  align-items: center;
+}
+.We > div {
+  width: 50%;
+  /* border: 1px solid gold; */
+}
+.We_right {
+  padding-left: 2rem;
+  color: #ffffff;
+}
+.We_right > h1 {
+  font-style: italic;
+}
+
+.We_right > h1:hover {
+  width: fit-content;
+  color: whitesmoke;
+  /* border: 1px solid greenyellow; */
+  cursor: pointer;
+
+  text-shadow: 0 0 10px #fff;
+}
+.below_We {
+  width: 90%;
+  margin: auto;
+  margin-top: 10rem;
+  display: flex;
+  justify-content: space-between;
+  color: #ffffff;
+  align-items: center;
+  /* border: 1px solid greenyellow; */
+}
+.below_We_text_cont {
+  font-size: 26px;
+  font-style: italic;
+}
+
+.BeInTouchBtn {
+  border-radius: 40px;
+  padding: 10px 30px 10px 30px;
+  font-size: 20px;
+  background-image: linear-gradient(
+    to right,
+    violet,
+    pink,
+    rgba(255, 166, 0, 0.73)
+  );
+  border: 0;
+  cursor: pointer;
+  color: white;
+}
+
+.WE_Text_Cont {
+  font-size: 250px;
+  font-weight: bold;
+  text-align: center;
+}
+.WE_without_color {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  color: transparent;
+}
+.WE_without_color:hover {
+  color: white;
+}
+.WE_with_color {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  margin-top: -6rem;
+  /* border: 1px solid gold; */
+  color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
+.WE_with_color:hover {
+  color: transparent;
+}
+.third_WE {
+  margin-top: -6rem;
+}
+
+/* .arrowCont {
+  border: 1px solid greenyellow;
+} */
+.arrowCont > button {
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid transparent;
+}
+
+@keyframes animate {
+  0% {
+    text-shadow: none;
+  }
+  10% {
+    color: pink;
+    text-shadow: 0 0 10px pink, 0 0 20px pink;
+  }
+}
+
+@keyframes wave {
+  0%,
+  100% {
+    background-position: 0% center;
+  }
+  50% {
+    background-position: 100% center;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .brand_identity h1 {
+    font-size: 28px;
+  }
+  .what_wedo_for_you_cont h1 {
+    font-size: 28px;
+  }
+  .headings {
+    margin-left: 0.5rem;
+  }
+  .services_img_container {
+    grid-template-columns: repeat(2, 1fr);
+    /* gap: 1rem; */
+  }
+  .under_circle_txt > p {
+    font-size: 28px;
+  }
+  .Aboutus h1 {
+    font-size: 28px;
+  }
+  .Portfolio_right {
+    padding-right: 0;
+    text-align: center;
+  }
+  .btnContainer > button {
+    padding: 10px 30px 10px 30px;
+    font-size: 16px;
+  }
+  .Spandeobrandlab {
+    font-size: 40px;
+  }
+  .Portfolio {
+    width: 100%;
+    flex-direction: column;
+  }
+  .Portfolio > div {
+    width: 100%;
+  }
+  .We {
+    width: 100%;
+    flex-direction: column;
+  }
+  .We > div {
+    width: 90%;
+  }
+  .We_right {
+    font-size: 10px;
+    padding-left: 0;
+    text-align: center;
+
+  }
+  .WE_Text_Cont {
+    font-size: 180px;
+  }
+  .below_We {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+  .arrowCont {
+    display: flex;
+    justify-content: flex-end;
+  }
 }
