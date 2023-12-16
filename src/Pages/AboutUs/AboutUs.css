@@ -1,90 +1,143 @@
+.Aboutus_parent {
+  background-color: #020127;
+}
+
 .top_section {
   width: 95%;
   margin: auto;
-  margin-top: 2rem;
-  border: 1px solid green;
+  margin-top: 8rem;
+  /* border: 1px solid green; */
+}
 
-}
-.title {
-  font-size: 32px;
-  margin-left: 1rem;
-  border: 1px solid green;
-  font-weight: bold;
-}
 .IntroTitle {
-  font-size: 30px;
+  width: 80%;
+  font-size: 3em;
   text-transform: uppercase;
   font-weight: bold;
+  font-family: Verdana, sans-serif;
+  color: white;
+  /* font-style: oblique; */
+  text-transform: uppercase;
+  line-height: 1.4em;
+  background-image: linear-gradient(
+    to right,
+    #e157af,
+    #dfa92c,
+    #a54b8b,
+    orange
+  );
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-size: 200% 100%;
+  animation: wave 7s infinite;
 }
 
 .under_intro_title {
-  font-size: 20px;
-  font-weight: 200;
+  width: 90%;
+  margin: auto;
+  font-size: 24px;
+  font-weight: 100;
   line-height: 2rem;
+  /* font-style: italic; */
+  color: white;
 }
 
-.Image_container {
-  border: 1px solid green;
-  margin-top: 2rem;
+.Video_container {
+  /* border: 1px solid green; */
+  /* margin-top: 2rem; */
   max-width: 100%;
-}
-.Image_container img {
-  object-fit: contain;
-  width: 100%;
-  max-height: 50vh;
 }
 
 .Our_vision {
-  border: 1px solid black;
-  background-image: linear-gradient(to right, black, rgb(9, 9, 232));
-}
-.Our_vision_title {
-  color: white;
+  margin-top: 8rem;
+  /* border: 1px solid black; */
 }
 .under_Our_vision_title {
   width: 90%;
   margin: auto;
-  border: 1px solid greenyellow;
+  margin-top: 4rem;
+  /* border: 1px solid greenyellow; */
   color: white;
   line-height: 2rem;
-  font-size: 20px;
-  font-weight: 200;
+  font-size: 24px;
+  font-weight: 100;
 }
 .under_Our_vision_textpara {
   font-size: 22px;
-  font-weight: bold;
-  color: white;
-
+  font-weight: 100;
   line-height: 2rem;
+  color: white;
+}
+
+.Who_We_Are {
+  margin-top: 10rem;
 }
 
 .Who_We_Are_title_under {
   width: 90%;
-  border: 1px solid brown;
+  /* border: 1px solid brown; */
   margin: auto;
-  font-size: 20px;
-  font-weight: 200;
+  margin-top: 3rem;
+}
+.Who_We_Are_title_under > p {
+  font-size: 24px;
+  font-weight: 100;
   line-height: 2rem;
+  color: white;
 }
 
 .richa_banner {
-  height: 60vh;
-  margin-top: 2rem;
-  border: 1px solid black;
+  margin-top: 10rem;
+  /* border: 1px solid white; */
+}
+.richa_banner > h1 {
+  color: white;
+  font-size: 2.7em;
+  text-align: center;
 }
 
+.richa_banner_cont {
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+  margin-top: 8rem;
+}
+
+.richa_img_cont {
+  width: 60%;
+  /* border: 1px solid green; */
+}
+/* .richa_img_cont img {
+  width: 100%;
+} */
+
+.richa_project_img_cont {
+  width: 40%;
+  margin-top: 4rem;
+}
+.richa_project_img_cont > img {
+  width: 100%;
+}
+.richa_img_cont > h2 {
+  margin-left: 2rem;
+  margin-top: 3rem;
+  font-weight: bold;
+  line-height: 2.2rem;
+}
 .list_container {
-  width: 90%;
+  width: 85%;
   margin: auto;
-  margin-top: 1rem;
-  font-size: 20px;
-  line-height: 2rem;
-  border: 1px solid green;
+  margin-top: 3rem;
+  font-size: 22px;
+  line-height: 2.2rem;
+  font-weight: 100;
+  /* border: 1px solid green; */
+  color: white;
 }
 
 .Core_Team_Container {
-  margin-top: 2rem;
-  background-image: linear-gradient(to right, black, rgb(9, 9, 232));
+  margin-top: 8rem;
 }
 .Core_Team_title {
   margin-left: 5rem;
@@ -92,67 +145,112 @@
   color: white;
 }
 .Core_Team_img_and_text {
+  width: 90%;
+  margin: auto;
   display: flex;
-  border: 1px solid greenyellow;
+  /* border: 1px solid greenyellow; */
   margin-top: 5rem;
   align-items: center;
-
   padding-bottom: 3rem;
 }
 .Core_Team_img_container {
-  width: 50%;
+  /* border: 1px solid green; */
+  width: 40%;
 }
 .Core_Team_img_container img {
-  width: 100%;
+  width: 80%;
+  display: block;
+  margin: auto;
+  border-radius: 30px;
 }
 
 .Core_Team_text_container {
+  /* border: 1px solid green; */
+
+  width: 60%;
   font-size: 22px;
+  line-height: 2rem;
   color: white;
-  padding: 0 2rem 0 2rem;
-}
-.Core_Team_img_and_text_two {
-  display: flex;
-  border: 1px solid greenyellow;
-  margin-top: 5rem;
-  align-items: center;
-  background-color: white;
-  background-image: none;
+  font-weight: 100;
+  /* font-style: italic; */
+  /* padding: 0 2rem 0 2rem; */
 }
 
-.Core_Team_img_container_two {
-  width: 50%;
+.Core_Team_text_headings {
+  font-family: Verdana, sans-serif;
+  /* font-style: oblique; */
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.4em;
+  background-image: linear-gradient(
+    to right,
+    #e157af,
+    #dfa92c,
+    #a54b8b,
+    orange
+  );
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-size: 200% 100%;
+  animation: wave 7s infinite;
 }
-.Core_Team_img_container_two img {
-  width: 100%;
-}
-.Core_Team_text_container_two {
+
+.smallTxt {
   font-size: 22px;
-  padding: 0 2rem 0 2rem;
-  color: black;
+  font-weight: 100;
 }
-
 .your_success {
   width: 90%;
   margin: auto;
   margin-top: 2rem;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
 .your_success p {
   font-size: 70px;
   text-transform: uppercase;
   font-weight: bold;
+  color: white;
 }
-
-.Aboutus_footer_cont {
-  background-image: linear-gradient(to right, black, rgb(9, 9, 232));
+.team_member_names_cont > h2 {
+  color: white;
+  text-align: center;
 }
 
 @media only screen and (max-width: 767px) {
+  .headings {
+    margin-left: 0.5rem;
+    font-size: 1.8em;
+  }
+  .IntroTitle {
+    width: 100%;
+  }
   .Core_Team_img_and_text {
+    width: 100%;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .Core_Team_img_and_text div {
+    width: 90%;
+    margin: auto;
+  }
+  .Core_Team_text_container {
+    font-size: 20px;
+  }
+  .richa_banner_cont {
     flex-direction: column;
   }
-  .Core_Team_img_and_text_two{
-    flex-direction: column;
+  .richa_banner_cont div {
+    width: 100%;
+  }
+  .richa_img_cont img {
+    width: 100%;
+  }
+  .list_container {
+    width: 90%;
+    font-size: 20px;
+    line-height: 1.5rem;
   }
 }

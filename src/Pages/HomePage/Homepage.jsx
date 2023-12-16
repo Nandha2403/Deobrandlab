@@ -11,25 +11,15 @@ import WebsiteDesign from "../../Images/WebsiteDesign.png";
 import MediaFilm from "../../Images/MediaAndFlim.png";
 import Footer from "../../Components/Footer/Footer";
 import { ImLocation } from "react-icons/im";
-import { BsArrowRight } from "react-icons/bs";
-import { Button } from "antd";
-import { ArrowRightOutlined } from "@ant-design/icons";
 import { SlArrowUp } from "react-icons/sl";
 import SwiperSliderPorto from "../../Components/SwiperSlider/SwiperSliderPorto";
 import AOS from "aos";
+import IntroVideo from "../../Components/VideosContainer/IntroVideo";
+import DeoIntroVideo from "../../assets/DEO Logo Ani1.mp4";
 import "aos/dist/aos.css";
 import "./Homepage.css";
-import IntroVideo from "../../Components/Video/IntroVideo";
 
 const Homepage = () => {
-  const contentStyle = {
-    height: "160px",
-    color: "#fff",
-    lineHeight: "160px",
-    textAlign: "center",
-    background: "#364d79",
-  };
-
   const serviceImages = [
     { img: Branding },
     { img: Design },
@@ -53,39 +43,79 @@ const Homepage = () => {
 
   return (
     <div className="parent">
-      <div>
-        <Navbar />
-      </div>
+      <Navbar />
       <div className="video_container">
-        <IntroVideo />
+        <IntroVideo sample={DeoIntroVideo} />
       </div>
-      <div className="brand_identity">
+      <div className="brand_identity" data-aos="flip-up">
         <h1>
-          "Brand's Identity with Our Strategic, <br />
-          <br />
-          Performance, and Creative Solutions"
+          "Brand's Identity with Our Strategic, Performance, and
+          <br /> Creative Solutions"
         </h1>
       </div>
       <div className="trustedby_cont">
         <p className="headings">TRUSTED BY</p>
-        <SliderComponent />
+        <div>
+          <SliderComponent />
+        </div>
         {/* <img src={DineDesk} alt={"DineDesk"} /> */}
+      </div>
+
+      <div className="Aboutus">
+        <p className="headings">About Us</p>
+        <div className="Aboutus_txt_cont">
+          <p>
+            At DEOBRANDLAB, we go beyond marketing. We truly listen, inviting
+            you to amplify your brand. With our touch, challenges become
+            distinctive opportunities, guided by 'Refresh the way you listen.'
+            Our thinkers craft plans tailored to your unique brand. Join us to
+            create an unforgettable brand story that resonates uniquely with
+            your audience.
+          </p>
+        </div>
+        <div className="Aboutus_we_excel">
+          <p data-aos="fade-right" data-aos-duration="2000">
+            We Excel at Strategic Planning,
+            <br /> Propelling Ambitious Brands to <br /> Rapid Growth
+          </p>
+        </div>
+        <div>
+          <h1 data-aos="fade-down" data-aos-duration="2000">
+            that's <span className="Spandeobrandlab">DEOBRANDLAB</span>
+          </h1>
+        </div>
+        <div className="btnContainer">
+          <button>Explore</button>
+        </div>
       </div>
       <div className="what_wedo_for_you_cont">
         <p className="headings">WHAT WE DO FOR YOU!</p>
-        <h1>
+        <p
+          className="what_wedo_for_you_text_lets_create"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
           "Let's Create a Unique Brand Story <br />
           that Truly Connects with Your Audience"
-        </h1>
+        </p>
       </div>
       <div className="design_animate">
         <p className="headings">DESIGN ANIMATE</p>
-        <div className="design_animate_Location_circle">
+        {/* <div
+          className="design_animate_Location_circle"
+          data-aos="fade-down-right"
+        >
           <div>
             <ImLocation fontSize={"40px"} color="white" />
           </div>
+        </div> */}
+
+        <div className="wrapper">
+          <div className="stick">
+            <div className="ball"></div>
+          </div>
         </div>
-        <div className="under_circle_txt">
+        <div className="under_circle_txt" data-aos="fade-down">
           <p>Brand Identity + Strategic Media = Positive Results</p>
         </div>
       </div>
@@ -97,30 +127,20 @@ const Homepage = () => {
           ))}
         </div>
       </div>
-      <div className="Aboutus">
-        <p className="headings">About Us</p>
-        <h1>
-          We Excel at Strategic Planning,
-          <br /> Propelling Ambitious Brands to <br /> Rapid Growth
-        </h1>
-        <div>
-          <h1>
-            that's <span className="Spandeobrandlab">DEOBRANDLAB</span>
-          </h1>
-        </div>
-        <div className="btnContainer">
-          <Button>Explore</Button>
-        </div>
-      </div>
+
       <div className="Portfolio">
         <div className="Portfolio_left">
           <SwiperSliderPorto />
         </div>
         <div className="Portfolio_right">
-          <p className="headings">PORTFOLIO</p>
-          <h1>
-            Created new <br /> Brand Identity <br /> for RadiantSage
-          </h1>
+          <p className="headings Portfolio_right_headings">PORTFOLIO</p>
+          <h2 data-aos="fade-right" data-aos-duration="2000">
+            At DEOBRANDLAB, our journey through industries, from Paints and
+            E-commerce to Apparels and Food-Chains, has been defined by a
+            personalized touch. We pride ourselves on efficiently navigating
+            each process, tailoring strategies that uniquely align with the
+            essence of your brand.
+          </h2>
         </div>
       </div>
       <div className="We">
@@ -152,30 +172,17 @@ const Homepage = () => {
       </div>
       <div className="below_We">
         <div className="below_We_text_cont">
-          <h1>
+          <h1 data-aos="fade-right" data-aos-duration="1000">
             Let us take you <br /> further than you've <br /> ever been
           </h1>
-        </div>
-        <div
-        // style={{
-        //   display: "flex",
-        //   justifyContent: "space-between",
-        //   alignItems: "center",
-        // }}
-        >
-          {/* <button className="BeInTouchBtn">
-            Be In Touch
-            <BsArrowRight />
-          </button> */}
-          <Button
-            type="primary"
-            shape="round"
-            size="large"
-            style={{ fontSize: "19px" }}
-          >
-            Be In Touch
-            <ArrowRightOutlined style={{ fontSize: "19px", color: "white" }} />
-          </Button>
+          <div className="be_in_touch_btn_cont">
+            <button class="link style-7">
+              <span class="circle" aria-hidden="true">
+                <span class="icon arrow"></span>
+              </span>
+              <span class="button-text">Be In Touch</span>
+            </button>
+          </div>
         </div>
         <div className="arrowCont">
           <button onClick={scrollToTop}>

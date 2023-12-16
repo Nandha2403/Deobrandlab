@@ -1,2 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Dosis:wght@600&display=swap");
 
+.headings {
+  margin-left: 1rem;
+  font-family: Verdana, sans-serif;
+  /* font-style: oblique; */
+  font-size: 2.4em;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.4em;
+  background-image: linear-gradient(
+    to right,
+    #e157af,
+    #dfa92c,
+    #a54b8b,
+    orange
+  );
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-size: 200% 100%;
+  animation: wave 7s infinite;
+}
+.cursive_design {
+  font-size: 3em;
+  background-image: linear-gradient(
+    to right,
+    rgb(246, 80, 107),
+    rgb(249, 134, 153),
+    rgb(249, 184, 64)
+  );
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-family: "Dancing Script", cursive;
+}
 
+.orange_outline_text_design {
+  font-size: 2.3em;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: orange;
+  color: transparent;
+  font-family: "Dosis", sans-serif;
+}
+
+@media only screen and (max-width: 767px) {
+  .cursive_design {
+    font-size: 1.5em;
+  }
+  .orange_outline_text_design {
+    font-size: 1em;
+  }
+}

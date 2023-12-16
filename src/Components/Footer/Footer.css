@@ -69,6 +69,7 @@
   cursor: pointer;
 }
 
+
 @media only screen and (max-width: 767px) {
   .footerLinksAndLogoImg {
     width: 100%;

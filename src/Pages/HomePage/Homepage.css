@@ -2,25 +2,6 @@
   background-color: #020127;
 }
 
-.headings {
-  /* font-size: 32px;
-  color: palevioletred;
-  font-weight: bold; */
-
-  margin-left: 1rem;
-  color: #ffffff;
-  /* font-family: "Avenir", serif; */
-  /* font-family: "Raleway", sans-serif; */
-  /* font-family: "Bebas Neue", sans-serif; */
-  /* font-family: "Futura", "Trebuchet MS", Arial, sans-serif; */
-  font-family: Verdana, sans-serif;
-  font-style: oblique;
-  font-size: 2em;
-  font-weight: 700;
-  text-transform: uppercase;
-  line-height: 1.4em;
-  /* letter-spacing: 2px; */
-}
 .video_container {
   width: 100%;
   /* height: 60vh; */
@@ -35,8 +16,11 @@
 
 .brand_identity h1 {
   /* color: white; */
+  width: 90%;
+  margin: auto;
   text-align: center;
-  font-size: 36px;
+  font-size: 40px;
+  line-height: 4rem;
   background-image: linear-gradient(
     to right,
     #e157af,
@@ -48,31 +32,43 @@
   -webkit-background-clip: text;
   background-clip: text;
   background-size: 200% 100%;
-  animation: wave 5s infinite;
+  animation: wave 7s infinite;
 }
-/* .brand_identity h1:hover {
-  background-image: linear-gradient(to right, #ee00ff, orange, #66ebff);
-  color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-} */
 
 .trustedby_cont {
   margin-top: 10rem;
   /* border: 1px solid green; */
 }
+.trustedby_cont > div {
+  margin-top: 7rem;
+}
 
 .what_wedo_for_you_cont {
   margin-top: 10rem;
+
   /* border: 1px solid greenyellow; */
 }
-.what_wedo_for_you_cont h1 {
-  font-size: 26px;
-  line-height: 4rem;
-  color: #ffffff;
+.what_wedo_for_you_text_lets_create {
+  font-size: 2.5em;
   text-align: center;
-  margin: 5rem 0 5rem 0;
+  line-height: 3rem;
+  color: white;
+  margin-top: 8rem;
   font-style: italic;
+}
+
+.Aboutus_txt_cont {
+  width: 85%;
+  margin: auto;
+  margin-top: 5rem;
+  /* border: 1px solid green; */
+  color: white;
+}
+.Aboutus_txt_cont > p {
+  font-size: 1.7em;
+  line-height: 2.4rem;
+  font-weight: 100;
+  /* font-family: Verdana, sans-serif; */
 }
 
 .design_animate {
@@ -100,13 +96,13 @@
 }
 .under_circle_txt {
   color: white;
-  margin-top: 3rem;
   text-align: center;
+  margin-top: 15rem;
 }
 .under_circle_txt > p {
-  font-size: 26px;
-  font-style: italic;
-  font-weight: bold;
+  font-size: 2.4em;
+  font-weight: 100;
+  /* font-weight: bold; */
 }
 .services {
   margin-top: 10rem;
@@ -138,19 +134,41 @@
 }
 
 .Aboutus h1 {
-  font-size: 26px;
+  /* font-size: 26px; */
+  font-weight: 100;
   color: #ffffff;
   line-height: 3rem;
   text-align: center;
   margin: 5rem 0 3rem 0;
-  font-style: italic;
   /* border: 1px solid green; */
+}
+.Aboutus_we_excel {
+  /* font-weight: 100; */
+  color: #ffffff;
+  /* line-height: 3rem; */
+  text-align: center;
+  /* border: 1px solid greenyellow; */
+  margin: 5rem 0 3rem 0;
+}
+.Aboutus_we_excel p {
+  font-size: 3em;
+  line-height: 4rem;
 }
 
 .Spandeobrandlab {
   font-size: 50px;
-  /* -webkit-box-reflect: below 1px linear-gradient(transparent, #fff); */
+  background-image: linear-gradient(
+    to right,
+    #e157af,
+    #dfa92c,
+    #a54b8b,
+    orange
+  );
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
   outline: none;
+  font-weight: bold;
   animation: animate 5s linear infinite;
   background-color: transparent;
 }
@@ -159,6 +177,41 @@
   width: fit-content;
   /* border: 1px solid greenyellow; */
   margin: auto;
+}
+
+.btnContainer > button {
+  /* width: 250px; */
+  /* height: 80px; */
+  margin: 10px;
+  background-size: 100%;
+  font-size: 1em;
+  font-weight: 600;
+  border-radius: 100px;
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 1em 2em;
+  cursor: pointer;
+  transition: all 500ms ease;
+  box-shadow: 0 4px 6px -1px hsla(0, 0%, 0%, 0.1),
+    0 2px 4px -2px hsla(0, 0%, 0%, 0.1);
+  background: linear-gradient(
+    to right,
+    rgb(176, 134, 176),
+    rgb(222, 76, 101),
+    #e157af,
+    rgba(255, 166, 0, 0.73),
+    yellow
+  );
+  background-size: 350% 100%;
+  transition: all 0.4s ease-in-out;
+}
+
+.btnContainer > button:hover {
+  animation-name: flow;
+  animation-duration: 300ms;
+  animation-timing-function: linear;
 }
 /* .btnContainer > button {
   padding: 10px 40px 10px 40px;
@@ -185,13 +238,18 @@
 }
 
 .Portfolio_right {
-  padding-right: 2rem;
-  text-align: right;
+  text-align: left;
 }
-.Portfolio_right h1 {
-  font-size: 26px;
-  font-style: italic;
-  line-height: 2rem;
+
+.Portfolio_right_headings {
+  margin-left: 0;
+}
+.Portfolio_right h2 {
+  /* font-size: 26px; */
+  font-weight: 100;
+  /* font-style: italic; */
+  line-height: 2.3rem;
+  margin-left: 1rem;
   color: #ffffff;
 }
 
@@ -209,9 +267,9 @@
   padding-left: 2rem;
   color: #ffffff;
 }
-.We_right > h1 {
+/* .We_right > h1 {
   font-style: italic;
-}
+} */
 
 .We_right > h1:hover {
   width: fit-content;
@@ -222,7 +280,7 @@
   text-shadow: 0 0 10px #fff;
 }
 .below_We {
-  width: 90%;
+  width: 95%;
   margin: auto;
   margin-top: 10rem;
   display: flex;
@@ -232,10 +290,14 @@
   /* border: 1px solid greenyellow; */
 }
 .below_We_text_cont {
-  font-size: 26px;
-  font-style: italic;
+  display: flex;
+  align-items: center;
+  font-size: 2em;
+  /* font-style: italic; */
 }
-
+.be_in_touch_btn_cont {
+  margin-left: 1rem;
+}
 .BeInTouchBtn {
   border-radius: 40px;
   padding: 10px 30px 10px 30px;
@@ -284,6 +346,90 @@
   margin-top: -6rem;
 }
 
+button.link {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+  &.style-7 {
+    width: 12rem;
+    height: auto;
+    .circle {
+      transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+      position: relative;
+      display: block;
+      margin: 0;
+      width: 3rem;
+      height: 3rem;
+      background: palevioletred;
+      border-radius: 1.625rem;
+      .icon {
+        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        background: #fff;
+        &.arrow {
+          transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+          left: 0.625rem;
+          width: 1.125rem;
+          height: 0.125rem;
+          background: none;
+          &::before {
+            position: absolute;
+            content: "";
+            top: -0.32rem;
+            right: 0.0625rem;
+            width: 0.625rem;
+            height: 0.625rem;
+            border-top: 0.125rem solid white;
+            border-right: 0.125rem solid white;
+            transform: rotate(45deg);
+          }
+        }
+      }
+    }
+    .button-text {
+      transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 0.75rem 0;
+      margin: 0 0 0 1.85rem;
+      color: white;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1.6;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+  &:hover {
+    .circle {
+      width: 100%;
+      .icon {
+        &.arrow {
+          background: white;
+          transform: translate(1rem, 0);
+        }
+      }
+    }
+    .button-text {
+      color: white;
+    }
+  }
+}
+
 /* .arrowCont {
   border: 1px solid greenyellow;
 } */
@@ -295,6 +441,82 @@
   border: 1px solid transparent;
 }
 
+/* balancing animation for design animate */
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid green; */
+  margin-top: 14rem;
+}
+.stick {
+  width: 600px;
+  height: 25px;
+  background-color: #61c7ed;
+  /* background-color: rgba(205, 126, 69, 0.803); */
+  border-radius: 25px;
+  position: relative;
+  transform: rotate(-25deg);
+  animation: stickUpdown 4s ease-in-out 0.5s infinite alternate;
+}
+.ball {
+  position: absolute;
+  bottom: 100%;
+  left: calc(100% - 90px);
+  width: 150px;
+  height: 150px;
+  background-color: #a54b8b;
+  border-radius: 50%;
+  animation: ballMoving 4s ease-in-out 0.5s infinite alternate;
+}
+
+.ball:after,
+.ball:before {
+  position: absolute;
+  content: "";
+  top: 75px;
+  right: 10px;
+  width: 14px;
+  height: 14px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.ball:before {
+  right: auto;
+  left: 10px;
+}
+
+@keyframes stickUpdown {
+  0% {
+    transform: rotate(25deg);
+  }
+  100% {
+    transform: rotate(-25deg);
+  }
+}
+
+@keyframes ballMoving {
+  0% {
+    left: calc(100% - 90px);
+    transform: rotate(360deg);
+  }
+  100% {
+    left: -60px;
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes flow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
 @keyframes animate {
   0% {
     text-shadow: none;
@@ -317,32 +539,56 @@
 
 @media only screen and (max-width: 767px) {
   .brand_identity h1 {
-    font-size: 28px;
+    font-size: 1.5em;
+    line-height: 2rem;
   }
   .what_wedo_for_you_cont h1 {
-    font-size: 28px;
+    font-size: 20px;
   }
-  .headings {
-    margin-left: 0.5rem;
-  }
+
   .services_img_container {
     grid-template-columns: repeat(2, 1fr);
     /* gap: 1rem; */
   }
   .under_circle_txt > p {
-    font-size: 28px;
+    font-size: 2.1em;
+  }
+  .stick {
+    width: 300px;
+  }
+  .ball {
+    width: 90px;
+    height: 90px;
+  }
+  .ball:after,
+  .ball:before {
+    width: 7px;
+    height: 7px;
+
+    top: 40px;
   }
   .Aboutus h1 {
     font-size: 28px;
+  }
+
+  .Aboutus_txt_cont {
+    width: 95%;
+  }
+  .Aboutus_txt_cont > p {
+    font-size: 1.6em;
+    font-weight: 100;
+    line-height: normal;
+  }
+
+  .Aboutus_we_excel p {
+    font-size: 2em;
+    line-height: normal;
   }
   .Portfolio_right {
     padding-right: 0;
     text-align: center;
   }
-  .btnContainer > button {
-    padding: 10px 30px 10px 30px;
-    font-size: 16px;
-  }
+
   .Spandeobrandlab {
     font-size: 40px;
   }
@@ -364,16 +610,24 @@
     font-size: 10px;
     padding-left: 0;
     text-align: center;
-
   }
   .WE_Text_Cont {
     font-size: 180px;
+  }
+
+  .what_wedo_for_you_text_lets_create {
+    font-size: 2em;
   }
   .below_We {
     width: 100%;
     flex-direction: column;
     text-align: center;
     gap: 2rem;
+  }
+
+  .below_We_text_cont {
+    font-size: 1.2em;
+    flex-direction: column;
   }
   .arrowCont {
     display: flex;

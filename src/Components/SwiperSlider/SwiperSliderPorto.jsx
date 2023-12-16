@@ -2,6 +2,13 @@ import React from "react";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
+import VirgoImg1 from "../../Images/VirgoSecPortfolio.jpeg";
+import VirgoImg2 from "../../Images/VirgoPortfolio.jpeg";
+import Dinedesk1 from "../../Images/Dinedeskimg1.jpeg";
+import Dinedesk2 from "../../Images/Dinedeskimg2.jpeg";
+import Dinedesk3 from "../../Images/Dinedeskimg3.jpeg";
+import Lineology1 from "../../Images/LineologyImg1.jpeg";
+import Lineology2 from "../../Images/Lineologyimg2.jpeg";
 
 // Import Swiper styles
 import "swiper/css";
@@ -19,15 +26,27 @@ const SwiperSliderPorto = () => {
         modules={[EffectCards]}
         className="mySwiper"
       >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
+        <SwiperSlide>
+          <img src={Dinedesk1} alt="DineDesk" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={Dinedesk2} alt="DineDesk" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={Dinedesk3} alt="DineDesk" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={Lineology1} alt="Lineology" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={Lineology2} alt="Lineology" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={VirgoImg1} alt="SLM" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={VirgoImg2} alt="SLM" />
+        </SwiperSlide>
       </Swiper>
     </div>
   );
