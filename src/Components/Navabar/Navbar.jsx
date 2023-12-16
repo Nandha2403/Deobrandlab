@@ -21,7 +21,7 @@ const Navbar = () => {
   const items = [
     {
       key: "1",
-      label: <Link to={"/brand-stratergy"}>Brading</Link>,
+      label: <Link to={"/brand-strategy"}>Branding</Link>,
     },
     {
       key: "2",

@@ -22,7 +22,7 @@ const MarketAnalysis = () => {
       <div className="coffee_in_hand_stratergy_on_demand">
         <p>
           <span className="cursive_design">Coffee</span> in hand &nbsp; &nbsp;
-          &nbsp; Not <span className="cursive_design">Stratergy</span> on Demand
+          &nbsp; <span className="cursive_design">Stratergy</span> on Demand
         </p>
         <div className="coffee_in_hand_stratergy_on_demand_under_txt">
           <p>

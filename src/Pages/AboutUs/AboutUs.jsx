@@ -5,8 +5,6 @@ import AOS from "aos";
 import RichaImg from "../../Images/RichaImg.png";
 import Tedx from "../../Images/Tedx.jpeg";
 import Products from "../../Images/RichaProjects.jpeg";
-import IntroVideo from "../../Components/VideosContainer/IntroVideo";
-import OurTeamVideo from "../../assets/OurTeamVideo.mp4";
 import NandhaImg from "../../Images/Nandha.jpeg";
 import AshwinImg from "../../Images/AshwinImg.jpeg";
 import AmrutaImg from "../../Images/AmrutaImg.jpeg";

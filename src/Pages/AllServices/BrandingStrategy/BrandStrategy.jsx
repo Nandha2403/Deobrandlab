@@ -10,21 +10,13 @@ import BrandArchitecture from "../../../Images/BrandsArchitectureDevelopment.jpe
 import NomencultureStrategy from "../../../Images/NomenclatureStrategy.jpeg";
 import BrandStrategyCommunicationWorkshop from "../../../Images/BrandStrategyWorkshop.jpeg";
 import BrandStrategyBanner from "../../../Images/BrandStrategyBanner.jpeg";
-import "./BrandStratergy.css";
+import "./BrandStrategy.css";
 
-const BrandStratergy = () => {
+const BrandStrategy = () => {
   return (
     <div className="Service_parent">
-      <div>
-        <Navbar />
-      </div>
+      <Navbar />
 
-      <div className="Service_banner">
-        <img src={BrandStrategyBanner} alt="BrandStrategyBanner" />
-      </div>
-      <div className="Service_video">
-        <IntroVideo sample={BrandStrategyVideo} />
-      </div>
       <div className="coffee_chat_not_bedrooms_talks">
         <p>
           <span className="cursive_design">Coffee</span> Chats &nbsp; &nbsp;
@@ -37,6 +29,10 @@ const BrandStratergy = () => {
           </p>
         </div>
       </div>
+      <div className="Service_video">
+        <IntroVideo sample={BrandStrategyVideo} />
+      </div>
+
       <div className="Companies_and_Starting">
         <div className="one_fifty_billion">
           <p>150+ Billion</p>
@@ -53,9 +49,7 @@ const BrandStratergy = () => {
       </div>
       <div className="lets_groove">
         <p>
-          <span className="orange_outline_text_design">
-            Let's Groove To
-          </span>
+          <span className="orange_outline_text_design">Let's Groove To</span>
           <span className="cursive_design"> Create</span>
         </p>
       </div>
@@ -127,7 +121,7 @@ const BrandStratergy = () => {
             <p>
               What is in a Name? We Understand the Power of a Name. Meticulously
               Crafting Names that are Easy to Pronounce, Visually Appealing, and
-              Embody Your Brand’s Promise- Because Everything is in a Name.
+              Embody Your Brand’s Promise Because Everything is in a Name.
             </p>
           </div>
           <div>
@@ -163,4 +157,4 @@ const BrandStratergy = () => {
   );
 };
 
-export default BrandStratergy;
+export default BrandStrategy;
