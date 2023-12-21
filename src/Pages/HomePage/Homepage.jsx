@@ -10,13 +10,14 @@ import MarketAnalysis from "../../Images/MarketAnalysis.png";
 import WebsiteDesign from "../../Images/WebsiteDesign.png";
 import MediaFilm from "../../Images/MediaAndFlim.png";
 import Footer from "../../Components/Footer/Footer";
-import { SlArrowUp } from "react-icons/sl";
+
 import SwiperSliderPorto from "../../Components/SwiperSlider/SwiperSliderPorto";
 import AOS from "aos";
 import IntroVideo from "../../Components/VideosContainer/IntroVideo";
 import DeoIntroVideo from "../../assets/DEO Logo Ani1.mp4";
 import "aos/dist/aos.css";
 import "./Homepage.css";
+import BeInTouch from "../../Components/BeIntouchContainer/BeInTouch";
 
 const Homepage = () => {
   const serviceImages = [
@@ -30,12 +31,7 @@ const Homepage = () => {
     { img: MediaFilm },
   ];
 
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
+
   useEffect(() => {
     AOS.init();
   }, []);
@@ -169,26 +165,7 @@ const Homepage = () => {
           <h1>Develop Strategy</h1>
         </div>
       </div>
-      <div className="below_We">
-        <div className="below_We_text_cont">
-          <h1 data-aos="fade-right" data-aos-duration="1000">
-            Let us take you <br /> further than you've <br /> ever been
-          </h1>
-          <div className="be_in_touch_btn_cont">
-            <button class="link style-7">
-              <span class="circle" aria-hidden="true">
-                <span class="icon arrow"></span>
-              </span>
-              <span class="button-text">Be In Touch</span>
-            </button>
-          </div>
-        </div>
-        <div className="arrowCont">
-          <button onClick={scrollToTop}>
-            <SlArrowUp fontSize={"35px"} color="black" />
-          </button>
-        </div>
-      </div>
+      <BeInTouch />
       <Footer />
     </div>
   );

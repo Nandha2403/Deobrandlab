@@ -9,8 +9,8 @@ import BrandPersonality from "../../../Images/BrandPersonality.jpeg";
 import BrandArchitecture from "../../../Images/BrandsArchitectureDevelopment.jpeg";
 import NomencultureStrategy from "../../../Images/NomenclatureStrategy.jpeg";
 import BrandStrategyCommunicationWorkshop from "../../../Images/BrandStrategyWorkshop.jpeg";
-import BrandStrategyBanner from "../../../Images/BrandStrategyBanner.jpeg";
 import "./BrandStrategy.css";
+import BeInTouch from "../../../Components/BeIntouchContainer/BeInTouch";
 
 const BrandStrategy = () => {
   return (
@@ -150,6 +150,8 @@ const BrandStrategy = () => {
           </div>
         </div>
       </div>
+
+      <BeInTouch />
       <div>
         <Footer />
       </div>

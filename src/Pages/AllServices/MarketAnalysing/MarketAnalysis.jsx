@@ -6,13 +6,14 @@ import ConsumerInsights from "../../../Images/ConsumerInsight.jpeg";
 import CampaginRecommendation from "../../../Images/CampaignRecommendation.jpeg";
 import DigitalServey from "../../../Images/DigitalSurvey.jpeg";
 import QualitativeInterview from "../../../Images/QualatativeInterviews.jpeg";
-import CampaginIdeas from "../../../Images/CampaignIdeas .jpeg";
+import CampaginIdeas from "../../../Images/CampaignIdeas.jpeg";
 import IndustryAnalysis from "../../../Images/IndustryAnalysis.jpeg";
 import DerivingInsights from "../../../Images/DerivingInsights.jpeg";
 import IntroVideo from "../../../Components/VideosContainer/IntroVideo";
 import MarketAnalysisVideo from "../../../assets/Market_Analysis_Video.mp4";
 import MarketAnalysisBanner from "../../../Images/MarketAnalysisBanner.jpeg";
 import "./MarketAnalysis.css";
+import BeInTouch from "../../../Components/BeIntouchContainer/BeInTouch";
 
 const MarketAnalysis = () => {
   return (
@@ -61,7 +62,7 @@ const MarketAnalysis = () => {
         </div>
       </div>
 
-      <div className="you_need_to_adapt">
+      <div className="you_need_to_adapt_ma">
         <p>
           YOU NEED TO{" "}
           <span className="orange_outline_text_design">
@@ -205,6 +206,7 @@ const MarketAnalysis = () => {
           </div>
         </div>
       </div>
+      <BeInTouch />
       <Footer />
     </div>
   );

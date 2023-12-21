@@ -1,15 +1,38 @@
 import React, { useState } from "react";
-import { Button, Drawer, Menu, Dropdown } from "antd";
+import {
+  Button,
+  Drawer,
+  Menu,
+  Dropdown,
+  Col,
+  DatePicker,
+  Form,
+  Input,
+  Row,
+  Select,
+  Space,
+} from "antd";
 import DeoLogo from "../../Images/DeoLogo.png";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 const SubMenu = Menu.SubMenu;
+const { Option } = Select;
 
 const MenuItemGroup = Menu.ItemGroup;
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+
+  // const [open, setOpen] = useState(false);
+
+  const showDrawer = () => {
+    setOpen(true);
+  };
+
+  const onClose = () => {
+    setOpen(false);
+  };
 
   const handleDrawerOnOpen = () => {
     setOpen(true);
@@ -25,19 +48,19 @@ const Navbar = () => {
     },
     {
       key: "2",
-      label: <a href="#">Design Service</a>,
+      label: <Link to={"/design-service"}>Design Service</Link>,
     },
     {
       key: "3",
-      label: <a href="#">Digital Marketing</a>,
+      label: <Link to={"/digital-marketing"}>Digital Marketing</Link>,
     },
     {
       key: "4",
-      label: <a href="#">Content Writing</a>,
+      label: <Link to={"/content-writing"}>Content Writing</Link>,
     },
     {
       key: "5",
-      label: <a href="#">Personal Linkedin</a>,
+      label: <Link to={"/personal-linkedin"}>Personal Linkedin</Link>,
     },
     {
       key: "6",
@@ -45,11 +68,11 @@ const Navbar = () => {
     },
     {
       key: "7",
-      label: <a href="#">Website Design</a>,
+      label: <Link to={"/website-design"}>Website Design</Link>,
     },
     {
       key: "8",
-      label: <a href="#">Media & Film</a>,
+      label: <Link to={"/media&film"}>Media & Film</Link>,
     },
   ];
 
@@ -69,12 +92,15 @@ const Navbar = () => {
       </div>
       <div className="menu_container">
         <div className="menu_links_big_screen">
-          <Menu mode="horizontal" style={{ fontSize: "18px" }}>
+          <Menu
+            mode="horizontal"
+            style={{ fontSize: "18px", alignItems: "center" }}
+          >
             <Menu.Item key="home">
               <Link to={"/"}>Home</Link>
             </Menu.Item>
-            <Menu.Item key="Portfolio">
-              <a href="#">Portfolio</a>
+            <Menu.Item key="AboutUs">
+              <Link to={"/about-us"}>About Us</Link>
             </Menu.Item>
             <Menu.Item key="Services">
               <Dropdown
@@ -85,11 +111,156 @@ const Navbar = () => {
                 <a href="#">Services</a>
               </Dropdown>
             </Menu.Item>
-            <Menu.Item key="AboutUs">
-              <Link to={"/about-us"}>About Us</Link>
+
+            <Menu.Item key="Portfolio">
+              <a href="#">Portfolio</a>
             </Menu.Item>
             <Menu.Item key="ContactUs">
-              <a href="#">Contact Us</a>
+              <Link to={"/contact-us"}>Contact Us</Link>
+              {/* <div> */}
+              <Drawer
+                title="Create a new account"
+                width={720}
+                onClose={onClose}
+                open={open}
+                styles={{
+                  body: {
+                    paddingBottom: 80,
+                  },
+                }}
+                extra={
+                  <Space>
+                    <Button onClick={onClose}>Cancel</Button>
+                    <Button onClick={onClose} type="primary">
+                      Submit
+                    </Button>
+                  </Space>
+                }
+              >
+                <Form layout="vertical">
+                  <Row gutter={16}>
+                    <Col span={12}>
+                      <Form.Item
+                        name="name"
+                        label="Name"
+                        rules={[
+                          {
+                            required: true,
+                            message: "Please enter user name",
+                          },
+                        ]}
+                      >
+                        <Input placeholder="Please enter user name" />
+                      </Form.Item>
+                    </Col>
+                    <Col span={12}>
+                      <Form.Item
+                        name="url"
+                        label="Url"
+                        rules={[
+                          { required: true, message: "Please enter url" },
+                        ]}
+                      >
+                        <Input
+                          style={{ width: "100%" }}
+                          addonBefore="http://"
+                          addonAfter=".com"
+                          placeholder="Please enter url"
+                        />
+                      </Form.Item>
+                    </Col>
+                  </Row>
+                  <Row gutter={16}>
+                    <Col span={12}>
+                      <Form.Item
+                        name="owner"
+                        label="Owner"
+                        rules={[
+                          {
+                            required: true,
+                            message: "Please select an owner",
+                          },
+                        ]}
+                      >
+                        <Select placeholder="Please select an owner">
+                          <Option value="xiao">Xiaoxiao Fu</Option>
+                          <Option value="mao">Maomao Zhou</Option>
+                        </Select>
+                      </Form.Item>
+                    </Col>
+                    <Col span={12}>
+                      <Form.Item
+                        name="type"
+                        label="Type"
+                        rules={[
+                          {
+                            required: true,
+                            message: "Please choose the type",
+                          },
+                        ]}
+                      >
+                        <Select placeholder="Please choose the type">
+                          <Option value="private">Private</Option>
+                          <Option value="public">Public</Option>
+                        </Select>
+                      </Form.Item>
+                    </Col>
+                  </Row>
+                  <Row gutter={16}>
+                    <Col span={12}>
+                      <Form.Item
+                        name="approver"
+                        label="Approver"
+                        rules={[
+                          {
+                            required: true,
+                            message: "Please choose the approver",
+                          },
+                        ]}
+                      >
+                        <Select placeholder="Please choose the approver">
+                          <Option value="jack">Jack Ma</Option>
+                          <Option value="tom">Tom Liu</Option>
+                        </Select>
+                      </Form.Item>
+                    </Col>
+                    <Col span={12}>
+                      <Form.Item
+                        name="dateTime"
+                        label="DateTime"
+                        rules={[
+                          {
+                            required: true,
+                            message: "Please choose the dateTime",
+                          },
+                        ]}
+                      >
+                        <DatePicker.RangePicker style={{ width: "100%" }} />
+                      </Form.Item>
+                    </Col>
+                  </Row>
+                  <Row gutter={16}>
+                    <Col span={24}>
+                      <Form.Item
+                        name="description"
+                        label="Description"
+                        rules={[
+                          {
+                            required: true,
+                            message: "please enter url description",
+                          },
+                        ]}
+                      >
+                        <Input.TextArea
+                          rows={4}
+                          placeholder="please enter url description"
+                        />
+                      </Form.Item>
+                    </Col>
+                  </Row>
+                </Form>
+              </Drawer>
+              {/* </div> */}
             </Menu.Item>
           </Menu>
         </div>

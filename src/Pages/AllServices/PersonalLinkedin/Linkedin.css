@@ -1,4 +1,368 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
+
 .Linkedin_parent {
   background-color: #020127;
   color: white;
+}
+
+.espresso_container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  /* justify-content: space-between; */
+  /* border: 1px solid green; */
+}
+.espresso_container > p {
+  width: 50%;
+  /* border: 1px solid green; */
+}
+
+.espresso_cursive_design {
+  font-size: 13em;
+  background-image: linear-gradient(
+    to right,
+    rgb(246, 80, 107),
+    rgb(249, 134, 153),
+    rgb(249, 184, 64)
+  );
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-family: "Dancing Script", cursive;
+}
+
+.your_passion_txt {
+  font-size: 4em;
+}
+
+.as_your_digital {
+  width: 90%;
+  margin: auto;
+  margin-top: 3rem;
+  text-align: center;
+  /* border: 1px solid green; */
+}
+.as_your_digital p {
+  font-size: 2em;
+  line-height: 1.5em;
+}
+
+.you_need_to_adapt_pl {
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  /* border: 1px solid green; */
+}
+
+.you_need_to_adapt_pl div {
+  width: 50%;
+  /* border: 1px solid green; */
+}
+.you_need_to_adapt_pl div > img {
+  width: 100%;
+}
+
+.you_need_to_adapt_pl_right > p {
+  font-size: 3em;
+  width: max-content;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+.border_line_txt_pl {
+  font-family: "Dosis", sans-serif;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: orange;
+  color: transparent;
+}
+.you_need_to_adapt_pl_right > p:nth-child(1) {
+  margin-bottom: 10px;
+  /* border: 1px solid silver; */
+
+  color: white;
+}
+.you_need_to_adapt_pl_right > p:nth-child(3) {
+  padding-left: 6rem;
+  margin-top: 1rem;
+  /* border: 1px solid silver; */
+}
+.you_need_to_adapt_pl_right > p:nth-child(4) {
+  padding-left: 12rem;
+  margin-top: 1rem;
+  /* border: 1px solid silver; */
+}
+.you_need_to_adapt_pl_right > p:nth-last-child(1) {
+  margin-top: 10px;
+  color: white;
+}
+
+.Linkedin_Services {
+  margin-top: 5rem;
+  /* border: 1px solid yellow; */
+}
+.Linkedin_Services > p {
+  font-size: 4em;
+  text-align: center;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: palevioletred;
+  font-weight: bold;
+  color: transparent;
+  /* border: 1px solid yellow; */
+}
+.Linkedin_Services_img_cont {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  /* border: 1px solid gold; */
+}
+.Linkedin_Services_img_cont > div {
+  margin: auto;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+  /* border: 1px solid green; */
+}
+.Linkedin_Services_img_cont > div img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.who_we_are {
+  width: 95%;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  margin-top: 5rem;
+  /* border: 1px solid green; */
+}
+
+/* .who_we_are > p {
+  font-size: 2.4em;
+} */
+
+.who_we_are_colored_txt {
+  font-family: Verdana, sans-serif;
+  font-size: 4em;
+  /* font-weight: 700; */
+  text-transform: uppercase;
+  line-height: 1.4em;
+  background-image: linear-gradient(
+    to right,
+    #e157af,
+    #dfa92c,
+    #a54b8b,
+    orange
+  );
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-size: 200% 100%;
+  /* animation: wave 7s infinite; */
+  /* border: 1px solid wheat; */
+}
+
+.who_we_are_question_symbol {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 8em;
+  font-weight: bold;
+  /* border: 1px solid wheat; */
+}
+
+.who_we_are_Imagine {
+  font-size: 2.2em;
+}
+
+.stratezie_engage {
+  margin-top: 4rem;
+  /* border: 1px solid yellowgreen; */
+}
+
+.stratezie_engage > p {
+  font-size: 5em;
+  text-align: center;
+  /* font-family: "Cinzel", serif; */
+}
+
+.our_works {
+  margin-top: 2rem;
+  /* border: 1px solid yellowgreen; */
+}
+/* .our_works_carosule {
+  border: 1px solid white;
+} */
+
+.our_clients {
+  margin-top: 3rem;
+  /* border: 1px solid yellow; */
+}
+
+.our_clients_box_cont {
+  display: flex;
+  align-items: center;
+  /* border: 1px solid white; */
+}
+.our_clients_box_cont > div {
+  width: 50%;
+  margin-top: 2rem;
+  /* border: 1px solid goldenrod; */
+}
+.our_clients_txt_cont {
+  text-align: center;
+}
+.our_clients_txt_cont > p:nth-child(1) {
+  font-size: 3em;
+}
+.our_clients_txt_cont > p:nth-child(2) {
+  font-size: 1.5em;
+}
+.our_clients_box_cont > div img {
+  width: 300px;
+  display: block;
+  margin: auto;
+  border-radius: 10%;
+}
+
+.Linkedin_insight {
+  margin-top: 4rem;
+  margin-right: 2rem;
+  text-align: right;
+  font-size: 2em;
+  /* border: 1px solid ghostwhite; */
+}
+
+.our_works_carosule .swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.our_works_carosule .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 400px;
+}
+
+.our_works_carosule .swiper-slide img {
+  display: block;
+  width: 100%;
+}
+@media only screen and (max-width: 767px) {
+  .espresso_container {
+    width: 95%;
+    flex-direction: column;
+  }
+  .espresso_container > p {
+    width: 100%;
+  }
+  .espresso_cursive_design {
+    font-size: 7em;
+  }
+  .your_passion_txt {
+    font-size: 2.5em;
+  }
+
+  .as_your_digital {
+    width: 95%;
+  }
+  .as_your_digital p {
+    font-size: 1.2em;
+  }
+
+  .you_need_to_adapt_pl {
+    flex-direction: column;
+  }
+  .you_need_to_adapt_pl div {
+    width: 100%;
+  }
+  .you_need_to_adapt_pl_right > p {
+    width: 100%;
+    font-size: 1.8em;
+    text-align: center;
+  }
+
+  .you_need_to_adapt_pl_right > p:nth-child(3) {
+    padding-left: 0;
+    margin-top: 1rem;
+  }
+  .you_need_to_adapt_pl_right > p:nth-child(4) {
+    padding-left: 0;
+    margin-top: 1rem;
+  }
+
+  .you_need_to_adapt_pl_right > p:nth-last-child(1) {
+    margin-top: 1rem;
+  }
+
+  .Linkedin_Services > p {
+    font-size: 2.5em;
+  }
+  .Linkedin_Services_img_cont {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .Linkedin_Services_img_cont > div {
+    width: 200px;
+    height: 200px;
+  }
+  .who_we_are {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .who_we_are_colored_txt {
+    font-size: 3em;
+  }
+  .who_we_are_question_symbol {
+    font-size: 5em;
+  }
+
+  .who_we_are_Imagine {
+    font-size: 2em;
+  }
+  .stratezie_engage > p {
+    font-size: 2em;
+  }
+
+  .our_clients_box_cont {
+    flex-direction: column;
+  }
+  .our_clients_box_cont > div {
+    width: 100%;
+  }
+  .Linkedin_insight {
+    margin-top: 4rem;
+    margin-right: 0;
+    text-align: center;
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .Linkedin_Services_img_cont {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .Linkedin_Services_img_cont {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .espresso_container {
+    width: 95%;
+    flex-direction: column;
+  }
+  .espresso_container > p {
+    width: 100%;
+  }
+  .who_we_are {
+    flex-direction: column;
+    gap: 0;
+  }
+  .you_need_to_adapt_pl {
+    flex-direction: column;
+  }
 }

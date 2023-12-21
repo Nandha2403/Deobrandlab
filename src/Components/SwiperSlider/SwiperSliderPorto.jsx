@@ -13,13 +13,13 @@ import Lineology2 from "../../Images/Lineologyimg2.jpeg";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-cards";
-import "./SwierSliderPorto.css";
+import "./SwiperSliderPorto.css";
 
 import { EffectCards } from "swiper/modules";
 
 const SwiperSliderPorto = () => {
   return (
-    <div>
+    <div className="SwiperSliderPorto">
       <Swiper
         effect={"cards"}
         grabCursor={true}

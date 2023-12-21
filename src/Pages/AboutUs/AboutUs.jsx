@@ -13,6 +13,7 @@ import JyotiImg from "../../Images/JyotiImg.jpeg";
 import YouTube from "react-youtube";
 import "aos/dist/aos.css";
 import "./AboutUs.css";
+import BeInTouch from "../../Components/BeIntouchContainer/BeInTouch";
 
 const AboutUs = () => {
   const videoId = "_YBNNYtDzBQ";
@@ -248,15 +249,8 @@ const AboutUs = () => {
       </div>
       <div className="your_success">
         <p>Your success story begins with us.</p>
-        <div className="be_in_touch_btn_cont">
-          <button class="link style-7">
-            <span class="circle" aria-hidden="true">
-              <span class="icon arrow"></span>
-            </span>
-            <span class="button-text">Be In Touch</span>
-          </button>
-        </div>
       </div>
+      <BeInTouch />
 
       <div className="Aboutus_footer_cont">
         <Footer />

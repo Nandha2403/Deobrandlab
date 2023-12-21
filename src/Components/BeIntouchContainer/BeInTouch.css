@@ -1,0 +1,133 @@
+.below {
+  width: 95%;
+  margin: auto;
+  margin-top: 10rem;
+  display: flex;
+  justify-content: space-between;
+  color: #ffffff;
+  align-items: center;
+  /* border: 1px solid greenyellow; */
+}
+.below_text_cont {
+  display: flex;
+  align-items: center;
+  font-size: 2em;
+  /* font-style: italic; */
+}
+.be_in_touch_btn_cont {
+  margin-left: 1rem;
+}
+
+button.link {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+  &.style-7 {
+    width: 12rem;
+    height: auto;
+    .circle {
+      transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+      position: relative;
+      display: block;
+      margin: 0;
+      width: 3rem;
+      height: 3rem;
+      background: palevioletred;
+      border-radius: 1.625rem;
+      .icon {
+        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        background: #fff;
+        &.arrow {
+          transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+          left: 0.625rem;
+          width: 1.125rem;
+          height: 0.125rem;
+          background: none;
+          &::before {
+            position: absolute;
+            content: "";
+            top: -0.32rem;
+            right: 0.0625rem;
+            width: 0.625rem;
+            height: 0.625rem;
+            border-top: 0.125rem solid white;
+            border-right: 0.125rem solid white;
+            transform: rotate(45deg);
+          }
+        }
+      }
+    }
+    .button-text {
+      transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 0.75rem 0;
+      margin: 0 0 0 1.85rem;
+      color: white;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1.6;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+  &:hover {
+    .circle {
+      width: 100%;
+      .icon {
+        &.arrow {
+          background: white;
+          transform: translate(1rem, 0);
+        }
+      }
+    }
+    .button-text {
+      color: white;
+    }
+  }
+}
+
+/* .arrowCont {
+    border: 1px solid greenyellow;
+  } */
+.arrowCont > button {
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid transparent;
+}
+
+@media only screen and (max-width: 767px) {
+  .below {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .below_text_cont {
+    font-size: 1.2em;
+    flex-direction: column;
+  }
+
+  .arrowCont {
+    display: flex;
+    justify-content: flex-end;
+  }
+}

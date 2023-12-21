@@ -1,0 +1,29 @@
+.SwiperSliderPorto .swiper {
+  /* border: 1px solid greenyellow; */
+  width: 340px;
+  height: 400px;
+}
+
+.SwiperSliderPorto .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+/* .swiper-slide {
+  width: 100%;
+} */
+.SwiperSliderPorto .swiper-slide > img {
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+  .SwiperSliderPorto .swiper {
+    width: 55%;
+    height: 240px;
+  }
+}
